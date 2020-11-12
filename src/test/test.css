@@ -1,0 +1,129 @@
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    /*line-height: 1.6;*/
+}
+/*h1,h2,h3,h4,h5,h6 {
+    /*line-height: 1.2;*/
+    /*margin: 10px 0;
+}*/
+/*p {
+    margin: 10px 0;
+}*/
+/*img {
+    width: 100%;
+}
+code,pre {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}*/
+
+/** Navbar **/
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    height: 70px;
+}
+.navbar .main__nav ul {
+    display: flex;
+}
+.navbar .main__nav ul li a {
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar .main__nav ul li a:hover {
+    border-bottom: 2px solid #333;
+}
+.navbar .social__link ul {
+    display: flex;
+}
+.navbar .social__link ul li a {
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 18px;
+}
+.navbar .flex {
+    justify-content: space-between;
+}
+.navbar .menu {
+    display: none;
+}
+/** Responsive Menu **/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252A;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+}
+.overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    color: #fff;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #0088a9;
+}
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media(max-width:991px) {
+    .navbar .main__nav ul, .navbar .social__link ul {
+        display: none;
+    }
+    .navbar .menu {
+        display: inherit;
+        cursor: pointer;
+    }
+}
+
+/** Showcase **/
+.showcase {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    /*background: url('../assets/images/img-9.jpg');*/
+    background: url('../assets//images/img-home.jpg');
+    background-size: cover;
+    background-position: center;
+    /*background-color: #047a;*/
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.showcase .showcase-text {
+    position: relative;
+    text-align: center;
+    max-width: 750px;
+}
+.showcase h1 {
+    font-size: 36px;
+}
+.showcase p {
+    padding: 20px 0;
+}
