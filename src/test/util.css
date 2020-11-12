@@ -21,6 +21,27 @@
 .grid-3 {
     grid-template-columns: repeat(3,1fr);
 }
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.btn:hover,.btn-outline {
+    transform: scale(0.98);
+    background: #fff;
+    color: #333;
+    transition: all 0.3s ease 0s
+}
+.btn-outline {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
 .xl { font-size: 4rem; }
 .lg { font-size: 3rem; }
 .md { font-size: 2rem; }
