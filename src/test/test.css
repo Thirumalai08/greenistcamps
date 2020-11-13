@@ -144,3 +144,43 @@ img {
     width: 60px;
     height: 60px;
 }
+@media(max-width:991px){
+    .grid,.stats .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+/** Tour **/
+.tours { padding: 150px; }
+.tours .flex { flex-wrap: wrap; }
+
+.tours .card { 
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in-out;
+    width: 300px;
+    min-height: 350px;
+    height: auto;
+}
+.tours .card p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.tours .tours-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.tag {
+    float: left;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 6px 8px;
+    max-width: calc((100%)-60px);
+    background-color: #0088a9;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+}
